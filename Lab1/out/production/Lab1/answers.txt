@@ -3,23 +3,23 @@ Task 1: figuring out the complexity
 
 Insertion.java on:
   random inputs: Quadratic
-  95% sorted inputs: ????
+  95% sorted inputs: Quadratic
   sorted inputs: Linear
 
 Quick.java on:
-  random inputs: ????
-  95% sorted inputs: ????
-  sorted inputs: ????
+  random inputs: Linearithmic
+  95% sorted inputs: Linearithmic
+  sorted inputs: Quadratic
 
 Merge.java on:
-  random inputs: ????
-  95% sorted inputs: ????
-  sorted inputs: ????
+  random inputs: Linearithmic
+  95% sorted inputs: Linearithmic
+  sorted inputs: Linearithmic
 
 Arrays.sort on:
   random inputs: n lg n
-  95% sorted inputs: ????
-  sorted inputs: ????
+  95% sorted inputs: Linearithmic
+  sorted inputs: Linearithmic
 
 Task 2: improving quicksort
 ---------------------------

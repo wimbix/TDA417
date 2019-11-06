@@ -17,7 +17,7 @@ public class Quick {
      * @param a the array to be sorted
      */
     public static void sort(int[] a) {
-        // To do: try randomising the array before sorting.
+        StdRandom.shuffle(a);
         sort(a, 0, a.length - 1);
         assert isSorted(a);
     }
@@ -38,6 +38,8 @@ public class Quick {
     private static int partition(int[] a, int lo, int hi) {
         // To do: find the median of the first, last and middle
         // elements of a[lo..hi], and swap that index with a[lo].
+
+        exch(a, median3(a, lo, hi, a.length/2), lo);
 
         int i = lo;
         int j = hi + 1;
