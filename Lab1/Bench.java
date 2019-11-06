@@ -55,7 +55,7 @@ public class Bench {
 
     /** Auxiliary code, that measures performance of sorting algorithms **/
 
-    private static int[] SAMPLE_SIZES = new int[] { 10, 30, 100, 300, 1000, 3000, 10000, 30000, 100000, 300000 };
+    private static int[] SAMPLE_SIZES = new int[] { 10, 30, 100, 300, 1000, 3000, 10000, 30000, 100000 };
     private static int[][] sortedSamples = generateSamples(0);
     private static int[][] partiallySortedSamples = generateSamples(5);
     private static int[][] randomSamples = generateSamples(100);

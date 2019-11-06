@@ -17,20 +17,24 @@ public class Quick {
      * @param a the array to be sorted
      */
     public static void sort(int[] a) {
-        StdRandom.shuffle(a);
-        sort(a, 0, a.length - 1);
-        assert isSorted(a);
+            //StdRandom.shuffle(a);
+            sort(a, 0, a.length - 1);
+            assert isSorted(a);
     }
 
     // quicksort the subarray from a[lo] to a[hi]
     public static void sort(int[] a, int lo, int hi) { 
         // To do: try switching to insertion sort if a[lo..hi] is small.
-        if (hi <= lo) return;
+            if (hi <= lo) return;
 
-        int j = partition(a, lo, hi);
-        sort(a, lo, j-1);
-        sort(a, j+1, hi);
-        assert isSorted(a, lo, hi);
+            if(hi-lo < 100) {
+                Insertion.sort(a, lo, hi);
+            } else {
+                int j = partition(a, lo, hi);
+                sort(a, lo, j - 1);
+                sort(a, j + 1, hi);
+                assert isSorted(a, lo, hi);
+            }
     }
 
     // partition the subarray a[lo..hi] so that a[lo..j-1] <= a[j] <= a[j+1..hi]
@@ -39,7 +43,7 @@ public class Quick {
         // To do: find the median of the first, last and middle
         // elements of a[lo..hi], and swap that index with a[lo].
 
-        exch(a, median3(a, lo, hi, a.length/2), lo);
+        //exch(a, median3(a, lo, hi, a.length/2), lo); // Doesnt matter when the array is shuffled
 
         int i = lo;
         int j = hi + 1;
