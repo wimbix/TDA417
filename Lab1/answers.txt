@@ -2,24 +2,24 @@ Task 1: figuring out the complexity
 -----------------------------------
 
 Insertion.java on:
-  random inputs: ????
-  95% sorted inputs: ????
-  sorted inputs: ????
+  random inputs: Quadratic
+  95% sorted inputs: Quadratic
+  sorted inputs: Linear
 
 Quick.java on:
-  random inputs: ????
-  95% sorted inputs: ????
-  sorted inputs: ????
+  random inputs: Linear
+  95% sorted inputs: Linearithmic
+  sorted inputs: Linear
 
 Merge.java on:
-  random inputs: ????
-  95% sorted inputs: ????
-  sorted inputs: ????
+  random inputs: Linear
+  95% sorted inputs: Linear
+  sorted inputs: Linear
 
 Arrays.sort on:
   random inputs: n lg n
-  95% sorted inputs: ????
-  sorted inputs: ????
+  95% sorted inputs: Linear
+  sorted inputs: Linear
 
 Task 2: improving quicksort
 ---------------------------

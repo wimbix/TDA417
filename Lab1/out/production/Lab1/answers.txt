@@ -2,9 +2,9 @@ Task 1: figuring out the complexity
 -----------------------------------
 
 Insertion.java on:
-  random inputs: ????
+  random inputs: Quadratic
   95% sorted inputs: ????
-  sorted inputs: ????
+  sorted inputs: Linear
 
 Quick.java on:
   random inputs: ????
