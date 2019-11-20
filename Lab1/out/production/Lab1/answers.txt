@@ -33,13 +33,12 @@ input data? If so, what is it that changes?
   Median-of-three pivot selection: [no] [yes+reason]
   - Yes, sorted is now linearithmic
 
-
   Insertion sort for small arrays: [no] [yes+reason]
-  - No
+  - No difference in complexity but it makes it faster
   
 Which combination of improvements gives the best result?
 If you use insertion sort for small arrays, say what cutoff you used.
 
 [...answer here...]
 
-All improvements at the same time made the best results, with cutoff 100.
+Median-of-three and Insertion sort for small arrays together makes the best results, cutoff size 100

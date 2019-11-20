@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7684ee4-9f97-4e01-8911-b5e3175bf1f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Lab2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quick.java" beforeDir="false" afterPath="$PROJECT_DIR$/Quick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/answers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/Term.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,24 +18,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/answers.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+            <state relative-caret-position="457">
+              <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Quick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+            <state relative-caret-position="327">
+              <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#3497#3498#0" expanded="true" />
-                <element signature="e#3548#3549#0" expanded="true" />
+                <element signature="e#3500#3501#0" expanded="true" />
+                <element signature="e#3551#3552#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,14 +92,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Bench.java" />
-        <option value="$PROJECT_DIR$/answers.txt" />
         <option value="$PROJECT_DIR$/Quick.java" />
+        <option value="$PROJECT_DIR$/answers.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="833" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -127,7 +131,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573060505685" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574254301337" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -174,18 +179,21 @@
       <workItem from="1572964532716" duration="3150000" />
       <workItem from="1573044879863" duration="13047000" />
       <workItem from="1573130003987" duration="21000" />
-      <workItem from="1574252232033" duration="377000" />
+      <workItem from="1574252232033" duration="1924000" />
+      <workItem from="1574254398791" duration="14000" />
+      <workItem from="1574254493183" duration="77000" />
+      <workItem from="1574258655512" duration="895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16597000" />
+    <option name="totallyTimeSpent" value="19130000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="833" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19313304" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20171674" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -194,7 +202,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34152335" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42383292" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3992629" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -248,22 +256,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/answers.txt">
+    <entry file="file://$PROJECT_DIR$/Quick.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        <state relative-caret-position="327">
+          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#3500#3501#0" expanded="true" />
+            <element signature="e#3551#3552#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Quick.java">
+    <entry file="file://$PROJECT_DIR$/answers.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#3497#3498#0" expanded="true" />
-            <element signature="e#3548#3549#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="457">
+          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
         </state>
       </provider>
     </entry>
