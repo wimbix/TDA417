@@ -28,10 +28,11 @@ Do the following changes affect the complexity of quicksort on any kind of
 input data? If so, what is it that changes?
 
   Shuffling the array first: [no] [yes+reason]
-  - Yes, every input will be linearithmic because all imputs will be shuffled and therefore random
+  - Yes, every input will be linearithmic because all inputs will be shuffled and therefore random
 
   Median-of-three pivot selection: [no] [yes+reason]
-  - No
+  - Yes, sorted is now linearithmic
+
 
   Insertion sort for small arrays: [no] [yes+reason]
   - No

@@ -17,7 +17,7 @@ public class Quick {
      * @param a the array to be sorted
      */
     public static void sort(int[] a) {
-            StdRandom.shuffle(a);
+            //StdRandom.shuffle(a);
             sort(a, 0, a.length - 1);
             assert isSorted(a);
     }
@@ -43,7 +43,7 @@ public class Quick {
         // To do: find the median of the first, last and middle
         // elements of a[lo..hi], and swap that index with a[lo].
 
-        exch(a, median3(a, lo, hi, a.length/2), lo); // Doesnt matter when the array is shuffled
+        exch(a, median3(a, lo, hi, (hi + lo)/2), lo); // Doesnt matter when the array is shuffled
 
         int i = lo;
         int j = hi + 1;
