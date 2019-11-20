@@ -1,4 +1,5 @@
 import java.util.Comparator;
+import java.util.concurrent.ConcurrentMap;
 
 public class Term{
 
@@ -20,12 +21,12 @@ public class Term{
     // Compares the two terms in lexicographic order by query.
     public static Comparator<Term> byLexicographicOrder() {
 
-        return null;
+        return new LexicographicCmp();
     }
 
     // Compares the two terms in descending order by weight.
     public static Comparator<Term> byReverseWeightOrder() {
-        return null;
+        return new ReverseWeightCmp();
     }
 
     // Compares the two terms in lexicographic order,
@@ -35,7 +36,7 @@ public class Term{
             throw new IllegalArgumentException();
         }
 
-        return null;
+        return new PrefixCmp(k);
     }
 
     static class LexicographicCmp implements Comparator<Term> {
@@ -43,6 +44,30 @@ public class Term{
         @Override
         public int compare(Term o1, Term o2) {
             return o1.query.compareTo(o2.query);
+        }
+    }
+
+    static class ReverseWeightCmp implements Comparator<Term> {
+
+        @Override
+        public int compare(Term o1, Term o2) {
+            return Long.compare(o1.weight, o2.weight);
+        }
+    }
+
+    static class PrefixCmp implements Comparator<Term> {
+        int k;
+
+        public PrefixCmp(int k) {
+            this.k = k;
+        }
+
+        @Override
+        public int compare(Term o1, Term o2) {
+            String newO1 = o1.query.substring(0, k - 1);
+            String newO2 = o2.query.substring(0, k - 1);
+
+            return newO1.compareTo(newO2);
         }
     }
 
