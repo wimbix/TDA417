@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7684ee4-9f97-4e01-8911-b5e3175bf1f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lab2/src/Autocomplete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2/src/RangeBinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/src/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/Term.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -181,16 +178,15 @@
       <workItem from="1574252232033" duration="1924000" />
       <workItem from="1574254398791" duration="14000" />
       <workItem from="1574254493183" duration="77000" />
-      <workItem from="1574258655512" duration="1819000" />
+      <workItem from="1574258655512" duration="1824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20054000" />
+    <option name="totallyTimeSpent" value="20059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20171674" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -201,7 +197,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42344826" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42344826" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3992629" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

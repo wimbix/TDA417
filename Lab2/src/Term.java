@@ -52,8 +52,13 @@ public class Term {
 
         @Override
         public int compare(Term o1, Term o2) {
-            String newO1 = o1.query.substring(0, k - 1);
-            String newO2 = o2.query.substring(0, k - 1);
+            if(k > o1.query.length() || k > o2.query.length()) {
+                return -1;
+            }
+
+            System.out.println(o1.query);
+            String newO1 = o1.query.substring(0, k);
+            String newO2 = o2.query.substring(0, k);
 
             return newO1.compareTo(newO2);
         }
