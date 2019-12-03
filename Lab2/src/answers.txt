@@ -1,0 +1,87 @@
+
+
+/******************************************************************************
+ *  DAT038, TDA417  Datastrukturer och algoritmer, LP2 2019
+ *  Lab 2: Autocomplete
+ ******************************************************************************/
+
+Name of lab group: Lab 1 groups 55
+Group member A:    Daniel Karlkvist
+Group member B:    Marcus Axelsson
+
+
+/******************************************************************************
+ *  How many hours did you spend on the assignment?
+ *****************************************************************************/
+
+Group member A:    6.5
+Group member B:    6.5
+
+
+/******************************************************************************
+ *  Describe how your firstIndexOf() method in RangeBinarySearch.java
+ *  finds the first index of a key that equals the search key.
+ *****************************************************************************/
+
+First we set low and high to the first and last index of the array. Then we loop as long as low is lower than high. We set mid as the average between low and high.
+In the first if-statement we check if mid is greater or equal to the key, and set high as mid. The second statement checks if mid is lower than the key, and sets low to mid + 1.
+When low passes high, we return it.
+
+/******************************************************************************
+ *  What is the worst case time complexity in the number of compares
+ *  that each of the operations in the Autocomplete data type make,
+ *  as a function of the number of terms n and the number of matching terms m?
+ *
+ *  You can answer in O() notation, or in order-of-growth notation.
+ *  Recall that in both notations you should discard leading coefficients
+ *  and lower-order terms, e.g., m^2 + m log n.
+ *****************************************************************************/
+
+constructor:  [O(n log n)]
+
+Worst case occurs when:
+There are no null values, otherwise it throws an exception
+
+allMatches():   [O(log n + m log m)]
+
+Worst case for numberOfMatches: log n
+Worst case for Arrays.sort: m log m
+
+numberOfMatches():   [O(log n)]
+
+Worst case for binary search: log n
+
+
+/******************************************************************************
+ *  Are there any known bugs / limitations?
+ *****************************************************************************/
+
+When you type the last letter of the alphabet you get an error, index out of bounds.
+That's because it doesn't count the last word when calculating the size of the array.
+It tries to add n + 1 words in an array of size n.
+
+
+/******************************************************************************
+ *  Did you collaborate with any other students on this lab?
+ *  If so, please write in what way you collaborated and with whom.
+ *  Also include any resources (including the web) that you may
+ *  may have used in creating your design.
+ *****************************************************************************/
+
+We had a chat with Theo Khademi regarding syntax in Term (= new Comparator<Term>())
+
+
+/******************************************************************************
+ *  Describe any serious problems you encountered.                    
+ *****************************************************************************/
+
+The bug above... :D
+
+
+/******************************************************************************
+ *  List any other comments here. Feel free to provide any feedback   
+ *  on how much you learned from doing the assignment, and whether    
+ *  you enjoyed doing it.                                             
+ *****************************************************************************/
+
+We learned how to implement binary search

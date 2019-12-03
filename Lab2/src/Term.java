@@ -44,6 +44,8 @@ public class Term {
     }
 
     static class PrefixCmp implements Comparator<Term> {
+        String newO1;
+        String newO2;
         int k;
 
         public PrefixCmp(int k) {
@@ -52,13 +54,18 @@ public class Term {
 
         @Override
         public int compare(Term o1, Term o2) {
-            if(k > o1.query.length() || k > o2.query.length()) {
-                return -1;
+
+            if (o1.query.length() < k) {
+                newO1 = o1.query;
+            } else {
+                newO1 = o1.query.substring(0, k);
             }
 
-            System.out.println(o1.query);
-            String newO1 = o1.query.substring(0, k);
-            String newO2 = o2.query.substring(0, k);
+            if (o2.query.length() < k) {
+                newO2 = o2.query;
+            } else {
+                newO2 = o2.query.substring(0, k);
+            }
 
             return newO1.compareTo(newO2);
         }

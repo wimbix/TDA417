@@ -19,6 +19,7 @@ public class Autocomplete {
         }
 
         this.terms = terms;
+        Arrays.sort(terms, Term.byLexicographicOrder);
     }
 
     // Returns all terms that start with the given prefix, in descending order of weight.
@@ -59,18 +60,15 @@ public class Autocomplete {
             throw new NullPointerException();
         }
 
-        Comparator<Term> lexi = Term.byLexicographicOrder;
         Comparator<Term> prefixComparator = Term.byPrefixOrder(prefix.length());
-        try {
-            Arrays.sort(terms, lexi);
-        } catch (Error e) {
-            System.out.println(e);
-        }
 
         Term term1 = new Term(prefix, prefix.length());
         int firstIndex = RangeBinarySearch.firstIndexOf(terms, term1, prefixComparator);
         int lastIndex = RangeBinarySearch.lastIndexOf(terms, term1, prefixComparator);
 
-        return lastIndex-firstIndex;
+        System.out.println(firstIndex);
+        System.out.println(lastIndex);
+
+        return (lastIndex - firstIndex);
     }
 }
