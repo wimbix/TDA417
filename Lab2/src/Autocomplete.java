@@ -40,7 +40,12 @@ public class Autocomplete {
         for (Term term : terms) {
             if (prefixComparator.compare(term, term1) == 0) {
                 if (numberOfMatches != 0) {
-                    matchedTerms[index] = term;
+                    try {
+                        matchedTerms[index] = term;
+                    } catch (Error e) {
+
+                    }
+
                     index++;
                 }
 
@@ -65,9 +70,6 @@ public class Autocomplete {
         Term term1 = new Term(prefix, prefix.length());
         int firstIndex = RangeBinarySearch.firstIndexOf(terms, term1, prefixComparator);
         int lastIndex = RangeBinarySearch.lastIndexOf(terms, term1, prefixComparator);
-
-        System.out.println(firstIndex);
-        System.out.println(lastIndex);
 
         return (lastIndex - firstIndex);
     }

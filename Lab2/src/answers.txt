@@ -56,9 +56,6 @@ Worst case for binary search: log n
  *  Are there any known bugs / limitations?
  *****************************************************************************/
 
-When you type the last letter of the alphabet you get an error, index out of bounds.
-That's because it doesn't count the last word when calculating the size of the array.
-It tries to add n + 1 words in an array of size n.
 
 
 /******************************************************************************
@@ -75,7 +72,7 @@ We had a chat with Theo Khademi regarding syntax in Term (= new Comparator<Term>
  *  Describe any serious problems you encountered.                    
  *****************************************************************************/
 
-The bug above... :D
+We had a problem when using a prefix that fits with the last word in the sorted array, which now is resolved
 
 
 /******************************************************************************

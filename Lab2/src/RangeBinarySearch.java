@@ -44,6 +44,10 @@ public class RangeBinarySearch {
             }
         }
 
+        if (low == a.length-1) {
+            low += 1;
+        }
+
         return low;
     }
 }
