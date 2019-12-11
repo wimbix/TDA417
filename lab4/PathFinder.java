@@ -1,9 +1,5 @@
 
-import java.util.List;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.PriorityQueue;
-import java.util.Random;
+import java.util.*;
 
 import java.util.stream.Collectors;
 
@@ -98,12 +94,26 @@ public class PathFinder<V> {
          * TODO: Task 1 
          ********************/
 
-        PriorityQueue<V> pq = new PriorityQueue<V>();
+        HashMap<V, Double> distance = new HashMap<>();
+        HashMap<V, V> previous = new HashMap<>();
 
-        pq.add(graph);
+        ArrayList<V> visitedNodesList = new ArrayList<>();
 
+        PriorityQueue<DirectedEdge<V>> pq = new PriorityQueue<>(Comparator.comparing(x -> x.weight()));
 
+        for (DirectedEdge edge: graph.outgoingEdges(start)) {
+            if (edge.weight() < 0) {
+                throw new IllegalArgumentException("Edge has a negative weight");
+            }
+        }
 
+        V current = start;
+
+        previous.put(start, null);
+
+        while (!current.equals(goal)) {
+            //V neighbour =
+        }
 
         return new Result<>(false, start, null, -1, null, visitedNodes);
     }
