@@ -14,8 +14,8 @@ Group member B:    Marcus Axelsson
  *  How many hours did you spend on the assignment?
  *****************************************************************************/
 
-Group member A:    6.5
-Group member B:    6.5
+Group member A:    6.52
+Group member B:    6.6
 
 
 /******************************************************************************

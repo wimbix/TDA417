@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9e7683d-c2a1-4112-a581-ffc79f880da5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lab3/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Autocomplete.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Autocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RangeBinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/RangeBinarySearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RangeBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RangeBinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/answers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/answers.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="74" column="108" selection-start-line="74" selection-start-column="108" selection-end-line="74" selection-end-column="108" />
+            <state relative-caret-position="263">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
@@ -173,7 +168,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575638471937" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575638718508" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -221,12 +216,12 @@
       <workItem from="1574254593135" duration="15256000" />
       <workItem from="1575384695902" duration="10143000" />
       <workItem from="1575466288749" duration="2000" />
-      <workItem from="1575634099529" duration="2889000" />
+      <workItem from="1575634099529" duration="3146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28290000" />
+    <option name="totallyTimeSpent" value="28547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -380,8 +375,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/answers.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="74" column="108" selection-start-line="74" selection-start-column="108" selection-end-line="74" selection-end-column="108" />
+        <state relative-caret-position="263">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>

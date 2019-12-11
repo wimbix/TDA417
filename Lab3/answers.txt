@@ -6,7 +6,7 @@ Answer in terms of N, the total number of 5-grams in the input files.
 Assume that the number of 5-grams that occur in more than one file is a small
 constant - that is, there is not much plagiarised text.
 
-A: N^2
+A: O(n^2)
 
 Q: How long did the program take on the 'small' and 'medium' directories?
 Is the ratio between the times what you would expect, given the complexity?
@@ -14,12 +14,16 @@ Explain very briefly why.
 
 A:  Small: 2.19s
     Medium: 359.03s
-    Yes, but why?
+
+    Medium has about 10 times more 5-grams than small, if we look at the complexity we can assume that it would tak about 100 times longer.
+    And given your tip, its roughly 2 times slower than that
 
 Q: How long do you predict the program would take to run on the 'huge'
 directory?
 
-A: One day
+A: The huge set has about 20 times as many 5-grams, which with our complexity would be about 400 times slower.
+About 40h, and given your tip about 80h
+
 
 Using binary search trees
 -------------------------
@@ -40,6 +44,9 @@ Again, assume a total of N 5-grams, and a constant number of 5-grams that
 occur in more than one file.
 
 A:
+buildIndex: O(n log n)
+findSimilayity: O(n log n)
+Total: O(n log n)
 
 Q (optional): What if the total similarity score is an arbitrary number S,
 rather than a small constant?
