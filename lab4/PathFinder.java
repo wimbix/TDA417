@@ -96,9 +96,7 @@ public class PathFinder<V> {
 
         HashMap<V, Double> distance = new HashMap<>();
         HashMap<V, V> previous = new HashMap<>();
-
         ArrayList<V> visitedNodesList = new ArrayList<>();
-
         PriorityQueue<DirectedEdge<V>> pq = new PriorityQueue<>(Comparator.comparing(x -> x.weight()));
 
         for (DirectedEdge edge: graph.outgoingEdges(start)) {
@@ -108,11 +106,18 @@ public class PathFinder<V> {
         }
 
         V current = start;
-
         previous.put(start, null);
 
         while (!current.equals(goal)) {
-            //V neighbour =
+            V neighbour;
+            for(DirectedEdge<V> edge: graph.outgoingEdges(current)) {
+                neighbour = edge.to();
+                distance.put(current, edge.weight());
+                //double alt = distance.get(neighbour) +
+                //if (alt <  distance.get(neighbour)) {
+                    //distance.get(neighbour) =
+                //}
+            }
         }
 
         return new Result<>(false, start, null, -1, null, visitedNodes);
