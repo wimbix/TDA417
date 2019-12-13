@@ -66,6 +66,9 @@ public class WordLadder implements DirectedGraph<String> {
         /********************
          * TODO: Task 2
          ********************/
+
+        
+
         return new LinkedList<>();
     }
 
@@ -103,6 +106,7 @@ public class WordLadder implements DirectedGraph<String> {
      * @param args  the command-line arguments
      */
     public static void main(String[] args) {
+
         try {
             System.out.println(new WordLadder(args[0]));
         } catch (Exception e) {

@@ -96,7 +96,7 @@ public class PathFinder<V> {
 
         HashMap<V, Double> distance = new HashMap<>();
         HashMap<V, V> previous = new HashMap<>();
-        ArrayList<V> visitedNodesList = new ArrayList<>();
+        List<V> visitedNodesList = new ArrayList<>();
         PriorityQueue<DirectedEdge<V>> pq = new PriorityQueue<>(Comparator.comparing(x -> x.weight()));
 
         for (DirectedEdge edge: graph.outgoingEdges(start)) {
@@ -105,19 +105,44 @@ public class PathFinder<V> {
             }
         }
 
-        V current = start;
-        previous.put(start, null);
 
-        while (!current.equals(goal)) {
-            V neighbour;
-            for(DirectedEdge<V> edge: graph.outgoingEdges(current)) {
-                neighbour = edge.to();
-                distance.put(current, edge.weight());
-                //double alt = distance.get(neighbour) +
-                //if (alt <  distance.get(neighbour)) {
-                    //distance.get(neighbour) =
-                //}
+        previous.put(start, null);
+        distance.put(start, 0.0);
+
+        pq.add(new DirectedEdge<>(start, start));
+
+        while (!pq.isEmpty()) {
+            V current = pq.poll().to();
+            if(!visitedNodesList.contains(current)) {
+                visitedNodesList.add(current);
             }
+
+            if(current.equals(goal)) {
+                List<V> path = new ArrayList<>();
+                while (current != start) {
+                    path.add(current);
+                    current = previous.get(current);
+                }
+                visitedNodes = visitedNodesList.size();
+
+                return new Result<>(true, start, goal, distance.get(goal), path, visitedNodes);
+            }
+
+            for(DirectedEdge<V> edge: graph.outgoingEdges(current)) {
+
+                V edgeTo = edge.to();
+
+                if(distance.get(edgeTo) == null) {
+                    distance.put(edgeTo, distance.get(current) + edge.weight());
+                    previous.put(edgeTo, current);
+                    pq.add(edge);
+                } else if (distance.get(edgeTo) > distance.get(current) + edge.weight()) {
+                    distance.put(edgeTo, distance.get(current) + edge.weight());
+                    previous.put(edgeTo, current);
+                    pq.add(edge);
+                }
+            }
+
         }
 
         return new Result<>(false, start, null, -1, null, visitedNodes);
