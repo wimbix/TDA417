@@ -67,9 +67,13 @@ public class WordLadder implements DirectedGraph<String> {
          * TODO: Task 2
          ********************/
 
+        List<DirectedEdge<String>> returnValue = new LinkedList<>();
+
+
+
         
 
-        return new LinkedList<>();
+        return returnValue;
     }
 
 

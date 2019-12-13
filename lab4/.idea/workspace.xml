@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2f58e28-6284-447a-9188-64023f0532a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PathFinder$Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/PathFinder$Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PathFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/PathFinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PathFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/PathFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WordLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/WordLadder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/PathFinder$Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/PathFinder$Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/PathFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/PathFinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/WordLadder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/WordLadder.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PathFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="116" column="46" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
+            <state relative-caret-position="-53">
+              <caret line="99" column="103" lean-forward="true" selection-start-line="99" selection-start-column="103" selection-end-line="99" selection-end-column="103" />
               <folding>
                 <element signature="e#208#209#0" expanded="true" />
                 <element signature="e#242#243#0" expanded="true" />
@@ -51,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WordLadder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+            <state relative-caret-position="347">
+              <caret line="73" column="8" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,7 +131,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576249122709" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576249633293" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -195,18 +187,18 @@
       <workItem from="1575980635071" duration="2447000" />
       <workItem from="1576058172351" duration="580000" />
       <workItem from="1576160059055" duration="3116000" />
-      <workItem from="1576239159023" duration="9919000" />
+      <workItem from="1576239159023" duration="10469000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16062000" />
+    <option name="totallyTimeSpent" value="16612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18168813" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18168813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -215,7 +207,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2936118" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2936118" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -262,17 +254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PathFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="116" column="46" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
-          <folding>
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graphs/WordLadder/words-romaner.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -280,10 +261,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PathFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="99" column="103" lean-forward="true" selection-start-line="99" selection-start-column="103" selection-end-line="99" selection-end-column="103" />
+          <folding>
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WordLadder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+        <state relative-caret-position="347">
+          <caret line="73" column="8" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
