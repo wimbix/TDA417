@@ -89,15 +89,15 @@ public class PathFinder<V> {
 
 
     public Result<V> searchDijkstra(V start, V goal) {
-        int visitedNodes = 0;
         /********************
          * TODO: Task 1 
          ********************/
 
-        HashMap<V, Double> distance = new HashMap<>();
+        HashMap<V, Double> distanceTo = new HashMap<>();
         HashMap<V, V> previous = new HashMap<>();
         List<V> visitedNodesList = new ArrayList<>();
-        PriorityQueue<DirectedEdge<V>> pq = new PriorityQueue<>(Comparator.comparing(x -> x.weight()));
+        List<V> path = new LinkedList<>();
+        PriorityQueue<DirectedEdge<V>> pq = new PriorityQueue<>(Comparator.comparing(x -> distanceTo.get(x.to())));
 
         for (DirectedEdge edge: graph.outgoingEdges(start)) {
             if (edge.weight() < 0) {
@@ -105,56 +105,118 @@ public class PathFinder<V> {
             }
         }
 
-
-        previous.put(start, null);
-        distance.put(start, 0.0);
+        distanceTo.put(start, 0.0);
 
         pq.add(new DirectedEdge<>(start, start));
 
         while (!pq.isEmpty()) {
-            V current = pq.poll().to();
-            if(!visitedNodesList.contains(current)) {
-                visitedNodesList.add(current);
+            V currentNode = pq.poll().to();
+            if(!visitedNodesList.contains(currentNode)) {
+                visitedNodesList.add(currentNode);
             }
 
-            if(current.equals(goal)) {
-                List<V> path = new ArrayList<>();
-                while (current != start) {
-                    path.add(current);
-                    current = previous.get(current);
+            if(currentNode.equals(goal)) {
+                while (currentNode != start) {
+                    path.add(currentNode);
+                    currentNode = previous.get(currentNode);
                 }
-                visitedNodes = visitedNodesList.size();
 
-                return new Result<>(true, start, goal, distance.get(goal), path, visitedNodes);
+                path.add(start);
+
+                List<V> reversePath = new LinkedList<>();
+                for (int i = path.size() - 1; i >= 0; i--) {
+                    reversePath.add(path.get(i));
+                }
+
+                return new Result<>(true, start, goal, distanceTo.get(goal), reversePath, visitedNodesList.size());
             }
 
-            for(DirectedEdge<V> edge: graph.outgoingEdges(current)) {
+            for(DirectedEdge<V> edge: graph.outgoingEdges(currentNode)) {
 
                 V edgeTo = edge.to();
 
-                if(distance.get(edgeTo) == null) {
-                    distance.put(edgeTo, distance.get(current) + edge.weight());
-                    previous.put(edgeTo, current);
+                if(distanceTo.get(edgeTo) == null) {
+                    distanceTo.put(edgeTo, distanceTo.get(currentNode) + edge.weight());
+                    previous.put(edgeTo, currentNode);
                     pq.add(edge);
-                } else if (distance.get(edgeTo) > distance.get(current) + edge.weight()) {
-                    distance.put(edgeTo, distance.get(current) + edge.weight());
-                    previous.put(edgeTo, current);
+                } else if (distanceTo.get(edgeTo) > distanceTo.get(currentNode) + edge.weight()) {
+                    distanceTo.put(edgeTo, distanceTo.get(currentNode) + edge.weight());
+                    previous.put(edgeTo, currentNode);
                     pq.add(edge);
                 }
             }
 
         }
 
-        return new Result<>(false, start, null, -1, null, visitedNodes);
+        return new Result<>(false, start, null, -1, null, visitedNodesList.size());
     }
     
 
     public Result<V> searchAstar(V start, V goal) {
-        int visitedNodes = 0;
         /********************
          * TODO: Task 3
          ********************/
-        return new Result<>(false, start, null, -1, null, visitedNodes);
+
+        HashMap<V, V> previous = new HashMap<>();
+        HashMap<V, Double> gScore = new HashMap<>();
+        HashMap<V, Double> fScore = new HashMap<>();
+        List<V> visitedNodesList = new ArrayList<>();
+        List<V> path = new LinkedList<>();
+        PriorityQueue<DirectedEdge<V>> pq = new PriorityQueue<>(Comparator.comparing(x -> fScore.get(x.to())));
+
+        for (DirectedEdge edge: graph.outgoingEdges(start)) {
+            if (edge.weight() < 0) {
+                throw new IllegalArgumentException("Edge has a negative weight");
+            }
+        }
+
+        gScore.put(start, 0.0);
+        fScore.put(start, graph.guessCost(start, goal));
+
+        pq.add(new DirectedEdge<>(start, start));
+
+        while (!pq.isEmpty()) {
+            V currentNode = pq.poll().to();
+            if(!visitedNodesList.contains(currentNode)) {
+                visitedNodesList.add(currentNode);
+            }
+
+            if(currentNode.equals(goal)) {
+                while (currentNode != start) {
+                    path.add(currentNode);
+                    currentNode = previous.get(currentNode);
+                }
+
+                path.add(start);
+
+                List<V> reversePath = new LinkedList<>();
+                for (int i = path.size() - 1; i >= 0; i--) {
+                    reversePath.add(path.get(i));
+                }
+
+                return new Result<>(true, start, goal, gScore.get(goal), reversePath, visitedNodesList.size());
+            }
+
+            for(DirectedEdge<V> edge: graph.outgoingEdges(currentNode)) {
+
+                V edgeTo = edge.to();
+
+                if(gScore.get(edgeTo) == null) {
+                    gScore.put(edgeTo, gScore.get(currentNode) + edge.weight());
+                    previous.put(edgeTo, currentNode);
+                    fScore.put(edgeTo, gScore.get(currentNode) + edge.weight() + graph.guessCost(edgeTo, goal));
+                    pq.add(edge);
+                } else if (gScore.get(edgeTo) > gScore.get(currentNode) + edge.weight()) {
+                    gScore.put(edgeTo, gScore.get(currentNode) + edge.weight());
+                    previous.put(edgeTo, currentNode);
+                    fScore.put(edgeTo, gScore.get(currentNode) + edge.weight() + graph.guessCost(edgeTo, goal));
+                    pq.add(edge);
+                }
+            }
+
+        }
+
+        return new Result<>(false, start, null, -1, null, visitedNodesList.size());
     }
 
 }

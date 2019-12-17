@@ -104,7 +104,14 @@ public class GridGraph implements DirectedGraph<GridGraph.Coord> {
         /********************
          * TODO: Task 4
          ********************/
-        return 0;
+
+        // a^2 + b^2 = c^2
+        int a = end.x - start.x;
+        int b = end.y - end.x;
+
+        double c = Math.sqrt(a*a + b*b);
+
+        return c;
     }
 
 
