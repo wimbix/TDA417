@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c4f02e6-b211-43db-861c-20f79844b8bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GridGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/GridGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GridGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/GridGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PathFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/PathFinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PathFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/PathFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordLadder.class" beforeDir="false" afterPath="$PROJECT_DIR$/WordLadder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/WordLadder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/answers.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

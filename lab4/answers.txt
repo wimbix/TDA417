@@ -99,7 +99,10 @@ shortest path: syster -> sylter -> salter -> balter -> balder -> barder -> barde
  *  Why do you think this is the case?
  *****************************************************************************/
 
-The biggest percental difference is for NPuzzle, but why?
+The biggest percental difference is for NPuzzle.
+We think this is because the other methods does not really help us that much to the end.
+For example GridGraph only calculates the hypotenuse to the end and wordladder only gives us a number on how much the strings differ.
+
 
 
 /******************************************************************************
