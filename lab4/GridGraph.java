@@ -107,7 +107,7 @@ public class GridGraph implements DirectedGraph<GridGraph.Coord> {
 
         // a^2 + b^2 = c^2
         int a = end.x - start.x;
-        int b = end.y - end.x;
+        int b = end.y - start.y;
 
         double c = Math.sqrt(a*a + b*b);
 

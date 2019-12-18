@@ -201,7 +201,7 @@ public class PathFinder<V> {
 
                 V edgeTo = edge.to();
 
-                if(gScore.get(edgeTo) == null) {
+                if(fScore.get(edgeTo) == null) {
                     gScore.put(edgeTo, gScore.get(currentNode) + edge.weight());
                     previous.put(edgeTo, currentNode);
                     fScore.put(edgeTo, gScore.get(currentNode) + edge.weight() + graph.guessCost(edgeTo, goal));

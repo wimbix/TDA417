@@ -79,7 +79,6 @@ public class WordLadder implements DirectedGraph<String> {
                     outgoingEdges.add(new DirectedEdge<>(word, newWord));
                 }
             }
-
             characters[i] = word.charAt(i);
         }
 
@@ -99,7 +98,7 @@ public class WordLadder implements DirectedGraph<String> {
         char[] wCharacters = w.toCharArray();
 
         for (int i = 0; i < shortestWordLength; i++) {
-            if (vCharacters[i] == wCharacters[i]) cost++;
+            if (vCharacters[i] != wCharacters[i]) cost++;
         }
 
         return cost;
